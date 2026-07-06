@@ -1,6 +1,13 @@
-# TaskFlow Full-Stack Task Management Platform
+# TaskFlow - Full-Stack React + FastAPI Task Management Platform
+
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=111111)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-111827)
+![Docker](https://img.shields.io/badge/DevOps-Docker-2496ED?logo=docker&logoColor=white)
 
 TaskFlow is a portfolio-ready full-stack task management app built with React and FastAPI. It demonstrates secure authentication, role-based access control, task workflows, dashboard analytics, comments, file upload metadata, search/filtering, Docker, and CI.
+
+Suggested GitHub topics: `react`, `fastapi`, `fullstack`, `jwt-authentication`, `task-management`, `docker`, `github-actions`.
 
 ## Why this version is stronger for a resume
 
