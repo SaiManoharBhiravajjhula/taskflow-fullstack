@@ -1,0 +1,24 @@
+services:
+  api:
+    build: ./backend
+    environment:
+      DATABASE_URL: sqlite:////app/data/taskflow.db
+      JWT_SECRET: local-development-secret
+      CORS_ORIGINS: http://localhost:5173
+      UPLOAD_DIR: /app/data/uploads
+    ports:
+      - "8000:8000"
+    volumes:
+      - taskflow-data:/app/data
+
+  web:
+    build: ./frontend
+    environment:
+      VITE_API_URL: http://localhost:8000
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+
+volumes:
+  taskflow-data:
